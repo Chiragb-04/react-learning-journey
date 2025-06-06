@@ -1,5 +1,9 @@
-import { useState } from "react";
-import "./App.css";
+import React from 'react';
+import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import TextForm from './components/TextForm';
+import TodoList from './components/TodoList';
+import HomePage from './components/Home';
 
 function App() {
   const [tasks, setTasks] = useState([]);
@@ -35,51 +39,16 @@ function App() {
   const resetForm = (form) => form.reset();
 
   return (
-    <div className="App">
-      <Header title="ToDo List" />
-      <TaskForm onAddTask={handleAddTask} />
-      <TaskList tasks={tasks} />
-    </div>
-  );
-}
-
-function Header({ title }) {
-  return <h1>{title}</h1>;
-}
-
-function TaskForm({ onAddTask }) {
-  return (
-    <form onSubmit={onAddTask}>
-      <input
-        type="text"
-        name="taskName"
-        placeholder="Enter a task..."
-        autoComplete="off"
-      />
-      <button type="submit">Save</button>
-    </form>
-  );
-}
-
-function TaskList({ tasks }) {
-  if (tasks.length === 0) return <p>No tasks added yet.</p>;
-
-  return (
-    <div className="outerDiv">
-      <ul>
-        {tasks.map((task, index) => (
-          <TaskItem key={index} name={task} />
-        ))}
-      </ul>
-    </div>
-  );
-}
-
-function TaskItem({ name }) {
-  return (
-    <li>
-      {name} <span style={{ color: "red", cursor: "pointer" }}>&times;</span>
-    </li>
+    <Router> 
+      <Navbar />
+      <div className="container my-3">
+        <Routes>
+           <Route path="/" element={<HomePage />} />
+          <Route path="/todolist" element={<TodoList />} />
+          <Route path="/textform" element={<TextForm heading="Enter text to analyze" />} />
+        </Routes>
+      </div>
+    </Router>
   );
 }
 

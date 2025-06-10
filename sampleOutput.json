@@ -1,0 +1,45 @@
+{
+  "status": "ok",
+  "totalResults": 3,
+  "articles": [
+    {
+      "source": {
+        "id": "espn-cric-info",
+        "name": "ESPN Cric Info"
+      },
+      "author": "ESPN Staff",
+      "title": "Pakistan Ecstatic As Virat Kohli Smashes 71st Century vs Afghanistan",
+      "description": "Virat Kohli lit up the stadium with a stunning century, guiding India to a thrilling win over Pakistan in the Asia Cup 2025.",
+      "newsUrl": "https://www.india.com/sports/asia-cup-2022-pakistan-ecstatic-as-virat-kohli-smashes-71st-century-vs-afghanistan-5620286/",
+      "urlToImage": "https://images.hindustantimes.com/img/2022/09/08/550x309/Emirates-Asia-Cup-Cricket-44_1662651873143_1662651873143_1662651900814_1662651900814.jpg",
+      "publishedAt": "2025-06-07T17:00:00Z",
+      "content": "In a tense encounter at Colombo, Kohli delivered one of his finest knocks, silencing critics and delighting fans across the globe..."
+    },
+    {
+      "source": {
+        "id": "bbc-sport",
+        "name": "BBC Sport"
+      },
+      "author": null,
+      "title": "England women's cricket: Four talking points from Charlotte Edwards and Nat Sciver-Brunt's first series",
+      "description": "England have started the summer by thrashing a depleted West Indies side - but what does it mean for the team's post-Ashes rebuild and World Cup hopes?",
+      "newsUrl": "http://www.bbc.co.uk/sport/cricket/articles/crr785ddxv0o",
+      "urlToImage": "https://ichef.bbci.co.uk/ace/branded_sport/1200/cpsprodpb/2cbc/live/a539f140-43cd-11f0-b6e6-4ddb91039da1.jpg",
+      "publishedAt": "2025-06-07T19:52:21.0165676Z",
+      "content": "Fielding has been one of England's biggest areas for improvement, with six drops seeing them prematurely knocked out in T20 World Cup group stage and seven on day one of the Ashes Test alone. \r\nThey … [+1802 chars]"
+    },
+    {
+      "source": {
+        "id": "espn-cric-info",
+        "name": "ESPN Cric Info"
+      },
+      "author": "ESPN Staff",
+      "title": "Rajasthan lose to Mumbai by 100 runs, get knocked out of IPL",
+      "description": "Rajasthan Royals have been knocked out of the Indian Premier League play-offs race. Mumbai have hammered the Royals by 100 runs and have jumped to the top of the league table.",
+      "newsUrl": "https://www.indiatoday.in/sports/cricket/story/ipl-2025-rajasthan-royals-vs-mumbai-indians-live-score-updates-2718133-2025-05-01",
+      "urlToImage": "https://akm-img-a-in.tosshub.com/indiatoday/images/breaking_news/202505/mumbai-indians-vs-rajasthan-royals-ap-photo-013652669-16x9_0.jpg?VersionId=FIZSzQdjNJWL_b.KPtQBPcFlHb9XejrQ",
+      "publishedAt": "2025-05-14T21:00:00Z",
+      "content": "In one of the most dramatic finishes of IPL 2025, Rajasthan Royals chased down 188, with Riyan Parag hitting 18 off the final over..."
+    }
+  ]
+}

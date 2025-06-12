@@ -18,7 +18,38 @@ function App() {
             path="/textform"
             element={<TextForm heading="Enter text to analyze" />}
           />
-          <Route path="/news" element={<News />} />
+          {/* Sub-routes under /news */}
+          <Route
+            path="/news" 
+            element={<News />} />
+          <Route
+            path="/news/business"
+            element={<News key="business" category="business" />}
+          />
+          <Route
+            path="/news/entertainment"
+            element={<News key="entertainment" category="entertainment" />}
+          />
+          <Route
+            path="/news/general"
+            element={<News key="general" category="general" />}
+          />
+          <Route
+            path="/news/health"
+            element={<News key="health" category="health" />}
+          />
+          <Route
+            path="/news/science"
+            element={<News key="science" category="science" />}
+          />
+          <Route
+            path="/news/sports"
+            element={<News key="sports" category="sports" />}
+          />
+          <Route
+            path="/news/technology"
+            element={<News key="technology" category="technology" />}
+          />
         </Routes>
       </div>
     </Router>

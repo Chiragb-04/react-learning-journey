@@ -50,6 +50,50 @@ export class NavBar extends Component {
             </div>
           </div>
         </nav>
+        <div className="bg-secondary">
+          <div className="container">
+            <ul className="nav justify-content-center py-2">
+              <li className="nav-item">
+                <NavLink className="nav-link text-white" to="/news/business">
+                  Business
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink
+                  className="nav-link text-white"
+                  to="/news/entertainment"
+                >
+                  Entertainment
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link text-white" to="/news/general">
+                  General
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link text-white" to="/news/health">
+                  Health
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link text-white" to="/news/science">
+                  Science
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link text-white" to="/news/sports">
+                  Sports
+                </NavLink>
+              </li>
+              <li className="nav-item">
+                <NavLink className="nav-link text-white" to="/news/technology">
+                  Technology
+                </NavLink>
+              </li>
+            </ul>
+          </div>
+        </div>
       </div>
     );
   }

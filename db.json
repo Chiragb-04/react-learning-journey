@@ -1,0 +1,44 @@
+{
+  "users": [
+    {
+      "Name": "Chirag Bansal",
+      "Age": "19",
+      "Phone": "8560043221",
+      "Email": "chiragb849@gmail.com",
+      "Address": "Jaipur",
+      "id": "8cf6"
+    },
+    {
+      "Name": "Vaibhav Khandelwal",
+      "Age": "20",
+      "Phone": "6378090001",
+      "Email": "vaibhav25@gmail.com",
+      "Address": "Nagar",
+      "id": "ab74"
+    },
+    {
+      "Name": "abhinav mittal",
+      "Age": "21",
+      "Phone": "9785119008",
+      "Email": "abhinavm9@gmail.com",
+      "Address": "Delhi",
+      "id": "1574"
+    },
+    {
+      "Name": "Vipul Bansal",
+      "Age": "16",
+      "Phone": "9785619453",
+      "Email": "Vipul32@gmail.com",
+      "Address": "udaipur",
+      "id": "5808"
+    },
+    {
+      "id": "98ae",
+      "Name": "pratham",
+      "Age": "16",
+      "Phone": "675765675675",
+      "Email": "pratham@123",
+      "Address": "jaisalmer"
+    }
+  ]
+}

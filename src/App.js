@@ -5,6 +5,8 @@ import TextForm from "./components/TextForm";
 import TodoList from "./components/TodoList";
 import HomePage from "./components/Home";
 import News from "./components/News";
+import UserData from "./components/UserData";
+import AddUser from "./components/AddUser";
 
 function App() {
   return (
@@ -18,8 +20,11 @@ function App() {
             path="/textform"
             element={<TextForm heading="Enter text to analyze" />}
           />
+          <Route path="/userData" element={<UserData />} />
+          <Route path="/userData/add" element={<AddUser />} />
+
           {/* Sub-routes under /news */}
-          <Route
+          <Route 
             path="/news" 
             element={<News />} />
           <Route

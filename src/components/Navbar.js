@@ -1,8 +1,11 @@
 import React, { Component } from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, useLocation } from "react-router-dom";
 
 export class NavBar extends Component {
   render() {
+    const { location } = this.props;
+    const isNewsRoute = location.pathname.startsWith("/news");
+
     return (
       <div>
         <nav className="navbar navbar-expand-lg navbar-light bg-light">
@@ -46,57 +49,73 @@ export class NavBar extends Component {
                     NewsMonkey
                   </NavLink>
                 </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link" to="/userData">
+                    UserDetails
+                  </NavLink>
+                </li>
               </ul>
             </div>
           </div>
         </nav>
-        <div className="bg-secondary">
-          <div className="container">
-            <ul className="nav justify-content-center py-2">
-              <li className="nav-item">
-                <NavLink className="nav-link text-white" to="/news/business">
-                  Business
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink
-                  className="nav-link text-white"
-                  to="/news/entertainment"
-                >
-                  Entertainment
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link text-white" to="/news/general">
-                  General
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link text-white" to="/news/health">
-                  Health
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link text-white" to="/news/science">
-                  Science
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link text-white" to="/news/sports">
-                  Sports
-                </NavLink>
-              </li>
-              <li className="nav-item">
-                <NavLink className="nav-link text-white" to="/news/technology">
-                  Technology
-                </NavLink>
-              </li>
-            </ul>
+
+        {/* Sub-navbar for NewsMonkey categories  */}
+        {isNewsRoute && (
+          <div className="bg-secondary">
+            <div className="container">
+              <ul className="nav justify-content-center py-2">
+                <li className="nav-item">
+                  <NavLink className="nav-link text-white" to="/news/business">
+                    Business
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link text-white"
+                    to="/news/entertainment"
+                  >
+                    Entertainment
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link text-white" to="/news/general">
+                    General
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link text-white" to="/news/health">
+                    Health
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link text-white" to="/news/science">
+                    Science
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink className="nav-link text-white" to="/news/sports">
+                    Sports
+                  </NavLink>
+                </li>
+                <li className="nav-item">
+                  <NavLink
+                    className="nav-link text-white"
+                    to="/news/technology"
+                  >
+                    Technology
+                  </NavLink>
+                </li>
+              </ul>
+            </div>
           </div>
-        </div>
+        )}
       </div>
     );
   }
 }
 
-export default NavBar;
+// Custom wrapper to inject `location` into class component
+export default function NavBarWithRouterProps() {
+  const location = useLocation();
+  return <NavBar location={location} />;
+}
